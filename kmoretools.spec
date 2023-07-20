@@ -12,7 +12,6 @@ License: CC0-1.0 LGPL-2.0+ LGPL-2.1 LGPL-3.0
 Group: System/Libraries
 BuildRequires: cmake
 BuildRequires: cmake(ECM)
-BuildRequires: python
 BuildRequires: cmake(Qt6DBusTools)
 BuildRequires: cmake(Qt6DBus)
 BuildRequires: cmake(Qt6Network)
@@ -25,6 +24,7 @@ BuildRequires: cmake(Qt6DBusTools)
 BuildRequires: doxygen
 BuildRequires: cmake(Qt6ToolsTools)
 BuildRequires: cmake(Qt6)
+BuildRequires: cmake(Qt6Quick)
 BuildRequires: cmake(Qt6QuickTest)
 BuildRequires: cmake(Qt6Concurrent)
 BuildRequires: cmake(KF6Config)
