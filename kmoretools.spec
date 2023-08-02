@@ -1,6 +1,6 @@
 %define libname %mklibname KF6MoreTools
 %define devname %mklibname KF6MoreTools -d
-%define git 20230726
+%define git 20230802
 
 Name: kmoretools
 Version: 5.240.0
