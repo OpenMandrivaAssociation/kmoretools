@@ -1,11 +1,16 @@
+%define stable %([ "$(echo %{version} |cut -d. -f2)" -ge 80 -o "$(echo %{version} |cut -d. -f3)" -ge 70 ] && echo -n un; echo -n stable)
 %define libname %mklibname KF6MoreTools
 %define devname %mklibname KF6MoreTools -d
-%define git 20231103
+%define git 20231129
 
 Name: kmoretools
-Version: 5.240.0
+Version: 5.246.0
 Release: %{?git:0.%{git}.}1
+%if 0%{?git:1}
 Source0: https://invent.kde.org/libraries/kmoretools/-/archive/master/kmoretools-master.tar.bz2#/kmoretools-%{git}.tar.bz2
+%else
+Source0: https://download.kde.org/%{stable}/frameworks/%{version}/kmoretools-%{version}.tar.xz
+%endif
 Summary: Support for downloading application assets from the network
 URL: https://invent.kde.org/libraries/kmoretools
 License: CC0-1.0 LGPL-2.0+ LGPL-2.1 LGPL-3.0
