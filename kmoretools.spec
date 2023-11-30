@@ -40,8 +40,6 @@ BuildRequires: cmake(KF6KIO)
 BuildRequires: cmake(KF6Service)
 BuildRequires: cmake(KF6WidgetsAddons)
 Requires: %{libname} = %{EVRD}
-# Prevent the KF5 version from being pulled in
-BuildRequires: plasma6-xdg-desktop-portal-kde
 
 %description
 Support for downloading application assets from the network
