@@ -1,10 +1,10 @@
 %define stable %([ "$(echo %{version} |cut -d. -f2)" -ge 80 -o "$(echo %{version} |cut -d. -f3)" -ge 70 ] && echo -n un; echo -n stable)
 %define libname %mklibname KF6MoreTools
 %define devname %mklibname KF6MoreTools -d
-%define git 20231222
+%define git 20240110
 
 Name: kmoretools
-Version: 5.247.0
+Version: 5.248.0
 Release: %{?git:0.%{git}.}1
 %if 0%{?git:1}
 Source0: https://invent.kde.org/libraries/kmoretools/-/archive/master/kmoretools-master.tar.bz2#/kmoretools-%{git}.tar.bz2
